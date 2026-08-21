@@ -1,0 +1,260 @@
+   .name{
+    text-align: center;
+    font-size:22px;
+    color: blueviolet;
+} 
+
+
+.btn1{
+    border-radius: 18px;
+    background-color: blueviolet;
+    color:white;
+    width:150px;
+    height:40px;
+    border: none;
+}
+.btn1:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+a:hover{
+color: blueviolet;
+}
+.sub-headings{
+    color:blueviolet;
+}
+
+#Main-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box1 {
+    width: 150px;
+    min-height: 180px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(127, 65, 65);
+    border: none;
+    background-color: rgb(248, 248, 246);
+}
+
+#Main1-box{
+display:flex;
+margin:auto;
+justify-content: center;
+gap:30px;
+}
+
+p{
+    color: grey;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid rgb(45, 43, 43);
+    
+} 
+body{
+    text-align: center;
+    margin: auto;
+}
+.box2 {
+    width: 150px;
+    min-height: 180px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(127, 65, 65);
+    background-color: rgb(248, 248, 246);
+    border:none;
+}
+.box1:hover,
+.box2:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+}
+.nav-links{
+    display:flex;
+    align-items: center;
+    gap:35px;
+}
+.about-quote {
+    background-color: rgb(230, 212, 248);
+    width: 350px;
+    min-height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    color: blueviolet;
+    font-weight: 500;
+}
+span{
+    color: blueviolet;
+}
+.btn2{
+    background-color: blueviolet;
+    color: white;
+   width: 170px;
+    min-height: 60px;
+text-align: center;
+border: none;
+border-radius: 10px;
+gap:80px;
+}
+.hero-image{
+    width:500px;
+    height:600px;
+    justify-content: right;
+}
+.btn3{
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    width: 130px;
+    min-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    gap:80px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.btn3:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.btn2:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.main{
+background-color: rgb(230, 212, 248);
+border-radius: 10px;
+border: none;
+width:500px;
+height:500px;
+}
+.details{
+    justify-content: right;
+
+}
+textarea{
+    width:550px;
+    height:100px;
+}
+input{
+    width:550px;
+    height:40px;
+}
+
+#Main-box,
+#Main1-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:25px;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+
+    input,
+    textarea{
+        width:100%;
+    }
+
+    .content{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .main,
+    .main1{
+        width:100%;
+    }
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+.btn2 {
+    margin-right: 15px;
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
